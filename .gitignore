@@ -276,3 +276,7 @@ cython_debug/
 # Ignore all local history of files
 .history
 .ionide
+/out_dir/
+*.model
+*.model.*
+torch_rnn/out
