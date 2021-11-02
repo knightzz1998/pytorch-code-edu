@@ -63,8 +63,6 @@ class WeiboDataSets(Dataset):
         data = np.array(input_idx)
         return label, data
 
-
-
     def read_stop_words(self):
         """
             读取停用词
@@ -106,7 +104,7 @@ class WeiboDataSets(Dataset):
 
 
 def data_loader(dataset):
-    return DataLoader(dataset, batch_size=128, shuffle=True)
+    return DataLoader(dataset, batch_size=1024, shuffle=True)
 
 
 def load_dataset():
